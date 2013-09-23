@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Xiaohan Kang. All rights reserved.
 //
 
-#ifndef MULTIHOPLQF_COMPARE_QUEUE_H_
-#define MULTIHOPLQF_COMPARE_QUEUE_H_
+#ifndef MULTIHOP_LQF_COMPARE_QUEUE_H_
+#define MULTIHOP_LQF_COMPARE_QUEUE_H_
 
 #include <utility>
 
@@ -16,4 +16,4 @@ bool compQueue(const std::pair<double, int> &p1,
     return (p1.first < p2.first);
 }
 
-#endif  // MULTIHOPLQF_COMPARE_QUEUE_H_
+#endif  // MULTIHOP_LQF_COMPARE_QUEUE_H_

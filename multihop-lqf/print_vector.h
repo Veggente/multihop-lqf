@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Xiaohan Kang. All rights reserved.
 //
 
-#ifndef MULTIHOPLQF_PRINT_VECTOR_H_
-#define MULTIHOPLQF_PRINT_VECTOR_H_
+#ifndef MULTIHOP_LQF_PRINT_VECTOR_H_
+#define MULTIHOP_LQF_PRINT_VECTOR_H_
 
 #include <vector>
 
@@ -23,4 +23,4 @@ void print_vector(const std::vector<Type> &v) {
     std::cout << ")";
 }
 
-#endif  // MULTIHOPLQF_PRINT_VECTOR_H_
+#endif  // MULTIHOP_LQF_PRINT_VECTOR_H_

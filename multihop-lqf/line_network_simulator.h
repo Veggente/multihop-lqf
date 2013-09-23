@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Xiaohan Kang. All rights reserved.
 //
 
-#ifndef MULTIHOPLQF_LINE_NETWORK_SIMULATOR_H_
-#define MULTIHOPLQF_LINE_NETWORK_SIMULATOR_H_
+#ifndef MULTIHOP_LQF_LINE_NETWORK_SIMULATOR_H_
+#define MULTIHOP_LQF_LINE_NETWORK_SIMULATOR_H_
 
 #include <vector>
 #include <string>
@@ -28,4 +28,4 @@ int line_network_simulator(int num_links,  // number of links/servers in the
                            const std::string &filename_bp);
                                // filename for back-pressure
 
-#endif  // MULTIHOPLQF_LINE_NETWORK_SIMULATOR_H_
+#endif  // MULTIHOP_LQF_LINE_NETWORK_SIMULATOR_H_

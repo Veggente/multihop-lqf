@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Xiaohan Kang. All rights reserved.
 //
 
-#ifndef MULTIHOPLQF_BP_H_
-#define MULTIHOPLQF_BP_H_
+#ifndef MULTIHOP_LQF_BP_H_
+#define MULTIHOP_LQF_BP_H_
 
 #include <random>
 #include <utility>
@@ -70,4 +70,4 @@ std::vector<bool> bp(const std::vector<std::vector<bool>> &M,
     return bp_schedule;
 }
 
-#endif  // MULTIHOPLQF_BP_H_
+#endif  // MULTIHOP_LQF_BP_H_

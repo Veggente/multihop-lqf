@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Xiaohan Kang. All rights reserved.
 //
 
-#ifndef MULTIHOPLQF_VECTOR_OPERATIONS_H_
-#define MULTIHOPLQF_VECTOR_OPERATIONS_H_
+#ifndef MULTIHOP_LQF_VECTOR_OPERATIONS_H_
+#define MULTIHOP_LQF_VECTOR_OPERATIONS_H_
 
 #include <vector>
 
@@ -25,4 +25,4 @@ std::vector<int> vector_change_by_bool(const std::vector<int> &v,
                                        const std::vector<bool> &b,
                                        bool increase);
 
-#endif  // MULTIHOPLQF_VECTOR_OPERATIONS_H_
+#endif  // MULTIHOP_LQF_VECTOR_OPERATIONS_H_

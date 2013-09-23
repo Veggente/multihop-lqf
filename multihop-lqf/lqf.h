@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Xiaohan Kang. All rights reserved.
 //
 
-#ifndef MULTIHOPLQF_LQF_H_
-#define MULTIHOPLQF_LQF_H_
+#ifndef MULTIHOP_LQF_LQF_H_
+#define MULTIHOP_LQF_LQF_H_
 
 #include <random>
 #include <utility>
@@ -88,4 +88,4 @@ std::vector<bool> lqf(const std::vector<std::vector<bool>> &M,
     return s;
 }
 
-#endif  // MULTIHOPLQF_LQF_H_
+#endif  // MULTIHOP_LQF_LQF_H_
