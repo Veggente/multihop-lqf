@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3049E39D17F0FFF700A99EA7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E39C17F0FFF700A99EA7 /* main.cpp */; };
 		3049E39F17F0FFF700A99EA7 /* multihop_lqf.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3049E39E17F0FFF700A99EA7 /* multihop_lqf.1 */; };
+		3049E3B917F1016400A99EA7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E3A817F1016400A99EA7 /* main.cpp */; };
+		3049E3BA17F1016400A99EA7 /* output_vector_to_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E3A917F1016400A99EA7 /* output_vector_to_file.cpp */; };
+		3049E3BB17F1016400A99EA7 /* running_time_check.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E3AC17F1016400A99EA7 /* running_time_check.cpp */; };
+		3049E3BC17F1016400A99EA7 /* vector_operations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E3AE17F1016400A99EA7 /* vector_operations.cpp */; };
+		3049E3BD17F1016400A99EA7 /* bernoulli_arrival_process.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E3B017F1016400A99EA7 /* bernoulli_arrival_process.cpp */; };
+		3049E3BE17F1016400A99EA7 /* generate_line_networks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E3B417F1016400A99EA7 /* generate_line_networks.cpp */; };
+		3049E3BF17F1016400A99EA7 /* line_network_simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E3B617F1016400A99EA7 /* line_network_simulator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +32,24 @@
 
 /* Begin PBXFileReference section */
 		3049E39917F0FFF700A99EA7 /* multihop-lqf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "multihop-lqf"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3049E39C17F0FFF700A99EA7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3049E39E17F0FFF700A99EA7 /* multihop_lqf.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = multihop_lqf.1; sourceTree = "<group>"; };
+		3049E3A817F1016400A99EA7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3049E3A917F1016400A99EA7 /* output_vector_to_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = output_vector_to_file.cpp; sourceTree = "<group>"; };
+		3049E3AA17F1016400A99EA7 /* output_vector_to_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = output_vector_to_file.h; sourceTree = "<group>"; };
+		3049E3AB17F1016400A99EA7 /* print_vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = print_vector.h; sourceTree = "<group>"; };
+		3049E3AC17F1016400A99EA7 /* running_time_check.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = running_time_check.cpp; sourceTree = "<group>"; };
+		3049E3AD17F1016400A99EA7 /* running_time_check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = running_time_check.h; sourceTree = "<group>"; };
+		3049E3AE17F1016400A99EA7 /* vector_operations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector_operations.cpp; sourceTree = "<group>"; };
+		3049E3AF17F1016400A99EA7 /* vector_operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector_operations.h; sourceTree = "<group>"; };
+		3049E3B017F1016400A99EA7 /* bernoulli_arrival_process.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bernoulli_arrival_process.cpp; sourceTree = "<group>"; };
+		3049E3B117F1016400A99EA7 /* bernoulli_arrival_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bernoulli_arrival_process.h; sourceTree = "<group>"; };
+		3049E3B217F1016400A99EA7 /* bp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bp.h; sourceTree = "<group>"; };
+		3049E3B317F1016400A99EA7 /* compare_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare_queue.h; sourceTree = "<group>"; };
+		3049E3B417F1016400A99EA7 /* generate_line_networks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = generate_line_networks.cpp; sourceTree = "<group>"; };
+		3049E3B517F1016400A99EA7 /* generate_line_networks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generate_line_networks.h; sourceTree = "<group>"; };
+		3049E3B617F1016400A99EA7 /* line_network_simulator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = line_network_simulator.cpp; sourceTree = "<group>"; };
+		3049E3B717F1016400A99EA7 /* line_network_simulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = line_network_simulator.h; sourceTree = "<group>"; };
+		3049E3B817F1016400A99EA7 /* lqf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lqf.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +82,23 @@
 		3049E39B17F0FFF700A99EA7 /* multihop-lqf */ = {
 			isa = PBXGroup;
 			children = (
-				3049E39C17F0FFF700A99EA7 /* main.cpp */,
+				3049E3A817F1016400A99EA7 /* main.cpp */,
+				3049E3A917F1016400A99EA7 /* output_vector_to_file.cpp */,
+				3049E3AA17F1016400A99EA7 /* output_vector_to_file.h */,
+				3049E3AB17F1016400A99EA7 /* print_vector.h */,
+				3049E3AC17F1016400A99EA7 /* running_time_check.cpp */,
+				3049E3AD17F1016400A99EA7 /* running_time_check.h */,
+				3049E3AE17F1016400A99EA7 /* vector_operations.cpp */,
+				3049E3AF17F1016400A99EA7 /* vector_operations.h */,
+				3049E3B017F1016400A99EA7 /* bernoulli_arrival_process.cpp */,
+				3049E3B117F1016400A99EA7 /* bernoulli_arrival_process.h */,
+				3049E3B217F1016400A99EA7 /* bp.h */,
+				3049E3B317F1016400A99EA7 /* compare_queue.h */,
+				3049E3B417F1016400A99EA7 /* generate_line_networks.cpp */,
+				3049E3B517F1016400A99EA7 /* generate_line_networks.h */,
+				3049E3B617F1016400A99EA7 /* line_network_simulator.cpp */,
+				3049E3B717F1016400A99EA7 /* line_network_simulator.h */,
+				3049E3B817F1016400A99EA7 /* lqf.h */,
 				3049E39E17F0FFF700A99EA7 /* multihop_lqf.1 */,
 			);
 			path = "multihop-lqf";
@@ -117,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3049E39D17F0FFF700A99EA7 /* main.cpp in Sources */,
+				3049E3B917F1016400A99EA7 /* main.cpp in Sources */,
+				3049E3BA17F1016400A99EA7 /* output_vector_to_file.cpp in Sources */,
+				3049E3BB17F1016400A99EA7 /* running_time_check.cpp in Sources */,
+				3049E3BC17F1016400A99EA7 /* vector_operations.cpp in Sources */,
+				3049E3BD17F1016400A99EA7 /* bernoulli_arrival_process.cpp in Sources */,
+				3049E3BE17F1016400A99EA7 /* generate_line_networks.cpp in Sources */,
+				3049E3BF17F1016400A99EA7 /* line_network_simulator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +260,7 @@
 				3049E3A417F0FFF700A99EA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
