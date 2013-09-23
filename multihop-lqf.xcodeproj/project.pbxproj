@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3027D5ED17F10AA3000DB982 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3027D5EC17F10AA3000DB982 /* makefile */; };
 		3049E39F17F0FFF700A99EA7 /* multihop_lqf.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3049E39E17F0FFF700A99EA7 /* multihop_lqf.1 */; };
 		3049E3B917F1016400A99EA7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E3A817F1016400A99EA7 /* main.cpp */; };
 		3049E3BA17F1016400A99EA7 /* output_vector_to_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E3A917F1016400A99EA7 /* output_vector_to_file.cpp */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3027D5EB17F10AA3000DB982 /* run-simulator.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "run-simulator.sh"; sourceTree = "<group>"; };
+		3027D5EC17F10AA3000DB982 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 		3049E39917F0FFF700A99EA7 /* multihop-lqf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "multihop-lqf"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3049E39E17F0FFF700A99EA7 /* multihop_lqf.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = multihop_lqf.1; sourceTree = "<group>"; };
 		3049E3A817F1016400A99EA7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 		3049E39B17F0FFF700A99EA7 /* multihop-lqf */ = {
 			isa = PBXGroup;
 			children = (
+				3027D5EB17F10AA3000DB982 /* run-simulator.sh */,
+				3027D5EC17F10AA3000DB982 /* makefile */,
 				3049E3A817F1016400A99EA7 /* main.cpp */,
 				3049E3A917F1016400A99EA7 /* output_vector_to_file.cpp */,
 				3049E3AA17F1016400A99EA7 /* output_vector_to_file.h */,
@@ -162,6 +167,7 @@
 				3049E3BD17F1016400A99EA7 /* bernoulli_arrival_process.cpp in Sources */,
 				3049E3BE17F1016400A99EA7 /* generate_line_networks.cpp in Sources */,
 				3049E3BF17F1016400A99EA7 /* line_network_simulator.cpp in Sources */,
+				3027D5ED17F10AA3000DB982 /* makefile in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
