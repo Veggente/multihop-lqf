@@ -32,7 +32,8 @@ int line_network_simulator(int num_links, int interference_distance,
     // run the iterations
     std::vector<int> queues_lqf(num_links, 0);  // queues for LQF
     std::vector<int> queues_bp(num_links, 0);  // queues for back-pressure
-    std::minstd_rand rng(static_cast<unsigned int>(0));  // random number generator
+    std::minstd_rand rng(static_cast<unsigned int>(0));
+        // random number generator
     std::vector<std::bernoulli_distribution> arrival_generator =
         bernoulli_distribution_vector(arrival_rate);  // Bernoulli distribution
                                                       // generator

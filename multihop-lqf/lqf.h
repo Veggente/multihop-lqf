@@ -30,7 +30,8 @@ std::vector<bool> lqf(const std::vector<std::vector<bool>> &M,
     }
 
     // Sort the pairs with random tie-breaking
-    std::random_shuffle(queuePairs.begin(), queuePairs.end());  // shuffle the pairs
+    std::random_shuffle(queuePairs.begin(), queuePairs.end());
+        // shuffle the pairs
     std::stable_sort(queuePairs.begin(), queuePairs.end(),
                 compQueue);  // stable_sort the pairs according to the queue
                              // only
