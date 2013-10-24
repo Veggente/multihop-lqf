@@ -17,11 +17,11 @@
 
 template <typename Type>  // Largest-Queue-First scheduling
 std::vector<bool> lqf(const std::vector<std::vector<bool>> &,
-                      const std::vector<Type> &, std::mt19937 &);
+                      const std::vector<Type> &, std::minstd_rand &);
 
 template <typename Type>  // LQF
 std::vector<bool> lqf(const std::vector<std::vector<bool>> &M,
-                      const std::vector<Type> &q, std::mt19937 &g) {
+                      const std::vector<Type> &q, std::minstd_rand &g) {
     // Make pairs of indices and queues
     std::vector<std::pair<Type, int>> queuePairs;
     for (int i = 0; i < q.size(); ++i) {
@@ -30,7 +30,7 @@ std::vector<bool> lqf(const std::vector<std::vector<bool>> &M,
     }
 
     // Sort the pairs with random tie-breaking
-    std::shuffle(queuePairs.begin(), queuePairs.end(), g);  // shuffle the pairs
+    std::random_shuffle(queuePairs.begin(), queuePairs.end());  // shuffle the pairs
     std::stable_sort(queuePairs.begin(), queuePairs.end(),
                 compQueue);  // stable_sort the pairs according to the queue
                              // only
@@ -52,7 +52,7 @@ std::vector<bool> lqf(const std::vector<std::vector<bool>> &M,
             newSurvivor.clear();
             newSurvivor.assign(survivor.begin(), survivor.end());
                 // copy survivor to newSurvivor
-            std::vector<int>::const_iterator it = newSurvivor.begin();
+            std::vector<int>::iterator it = newSurvivor.begin();
             while (it != newSurvivor.end()) {  // find compatible schedules
                 if ( !( (M[*it])[rit->second] ) ) {
                     newSurvivor.erase(it);  // newSurvivor.size() decreases by 1

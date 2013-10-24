@@ -15,6 +15,6 @@ std::vector<std::bernoulli_distribution> bernoulli_distribution_vector(
         const std::vector<double> &arrival_rate);
 
 std::vector<bool> bernoulli_random_vector(
-        std::vector<std::bernoulli_distribution> &bdv, std::mt19937 &rng);
+        std::vector<std::bernoulli_distribution> &bdv, std::minstd_rand &rng);
 
 #endif  // MULTIHOP_LQF_BERNOULLI_ARRIVAL_PROCESS_H_

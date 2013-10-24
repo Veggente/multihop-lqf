@@ -19,7 +19,7 @@ std::vector<std::bernoulli_distribution> bernoulli_distribution_vector(
 
 std::vector<bool> bernoulli_random_vector(
         std::vector<std::bernoulli_distribution> &bdv,
-        std::mt19937 &rng) {
+        std::minstd_rand &rng) {
     std::vector<bool> return_vector;  // NOLINT
     for (int i = 0; i < bdv.size(); ++i) {
         return_vector.push_back(bdv[i](rng));

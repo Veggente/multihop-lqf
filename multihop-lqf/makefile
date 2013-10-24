@@ -1,4 +1,4 @@
 all:
-	clang++ -Wall -std=c++11 -stdlib=libc++ *.cpp -O3 -o simulator
+	g++ -Wall *.cpp -std=c++0x -O3 -o simulator
 clean:
 	rm -rf simulator

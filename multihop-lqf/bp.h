@@ -19,7 +19,7 @@
 // schedule those with positive pressure.
 template <typename Type>
 std::vector<bool> bp(const std::vector<std::vector<bool>> &M,
-                     const std::vector<Type> &q, std::mt19937 &g) {
+                     const std::vector<Type> &q, std::minstd_rand &g) {
     std::vector<bool> bp_schedule;
 
     // Calculate back-pressure
@@ -55,7 +55,7 @@ std::vector<bool> bp(const std::vector<std::vector<bool>> &M,
     }
 
     // Shuffle the pairs
-    shuffle(weights.begin(), weights.end(), g);
+    random_shuffle(weights.begin(), weights.end());
 
     // Stable_sort the pairs
     stable_sort(weights.begin(), weights.end(), compQueue);

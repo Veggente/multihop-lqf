@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # test for branching
-for number_of_links in 5
+for number_of_links in 20
 do
-    for interference_distance in 1
+    for interference_distance in 2
     do
-        for iterations in 10000
+        for iterations in 1000000
         do
             for output_period in 1
             do
