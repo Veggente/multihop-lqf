@@ -15,7 +15,7 @@
 #include <algorithm>
 #include "./compare_queue.h"
 
-template <typename Type>  // Largest-Queue-First scheduling
+template <typename Type>  // Longest-Queue-First scheduling
 std::vector<bool> lqf(const std::vector<std::vector<bool>> &,
                       const std::vector<Type> &, std::mt19937 &);
 

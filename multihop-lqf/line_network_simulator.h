@@ -12,7 +12,7 @@
 #include <string>
 
 // Line network simulator with one-hop interference and Bernoulli arrivals.
-// Largest-deficit-first and back-pressure scheduling algorithms are used.
+// Longest-queue-first and back-pressure scheduling algorithms are used.
 // All links have constant service rate of one packet per time slot. Output in
 // files are queue lengths sampled at output periods.
 int line_network_simulator(int num_links,  // number of links/servers in the

@@ -13,10 +13,10 @@
 #include <vector>
 #include "./compare_queue.h"
 
-// Back-pressure scheduling algorithm: note that in this implementation when
-// two adjacent queues are equal, the pressure is zero and the first queue is
-// considered blocked; i.e., the back-pressure scheduling algorithm only
-// schedule those with positive pressure.
+// Back-pressure scheduling algorithm for linear networks: note that in this
+// implementation when two adjacent queues are equal, the pressure is zero and
+// the first queue is considered blocked; i.e., the back-pressure scheduling
+// algorithm only schedule those with positive pressure.
 template <typename Type>
 std::vector<bool> bp(const std::vector<std::vector<bool>> &M,
                      const std::vector<Type> &q, std::mt19937 &g) {
