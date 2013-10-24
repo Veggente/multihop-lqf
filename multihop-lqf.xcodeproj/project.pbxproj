@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302160C9181986E4003B7106 /* tree_network_simulator_two_one.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 302160C8181986E4003B7106 /* tree_network_simulator_two_one.cpp */; };
 		3027D5ED17F10AA3000DB982 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 3027D5EC17F10AA3000DB982 /* makefile */; };
 		3049E39F17F0FFF700A99EA7 /* multihop_lqf.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3049E39E17F0FFF700A99EA7 /* multihop_lqf.1 */; };
 		3049E3B917F1016400A99EA7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3049E3A817F1016400A99EA7 /* main.cpp */; };
@@ -32,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		302160C718198527003B7106 /* tree_network_simulator_two_one.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tree_network_simulator_two_one.h; sourceTree = "<group>"; };
+		302160C8181986E4003B7106 /* tree_network_simulator_two_one.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tree_network_simulator_two_one.cpp; sourceTree = "<group>"; };
 		3027D5EB17F10AA3000DB982 /* run-simulator.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "run-simulator.sh"; sourceTree = "<group>"; };
 		3027D5EC17F10AA3000DB982 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
 		3049E39917F0FFF700A99EA7 /* multihop-lqf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "multihop-lqf"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +106,8 @@
 				3049E3B517F1016400A99EA7 /* generate_line_networks.h */,
 				3049E3B617F1016400A99EA7 /* line_network_simulator.cpp */,
 				3049E3B717F1016400A99EA7 /* line_network_simulator.h */,
+				302160C8181986E4003B7106 /* tree_network_simulator_two_one.cpp */,
+				302160C718198527003B7106 /* tree_network_simulator_two_one.h */,
 				3049E3B817F1016400A99EA7 /* lqf.h */,
 				3049E39E17F0FFF700A99EA7 /* multihop_lqf.1 */,
 			);
@@ -163,6 +168,7 @@
 				3049E3B917F1016400A99EA7 /* main.cpp in Sources */,
 				3049E3BA17F1016400A99EA7 /* output_vector_to_file.cpp in Sources */,
 				3049E3BB17F1016400A99EA7 /* running_time_check.cpp in Sources */,
+				302160C9181986E4003B7106 /* tree_network_simulator_two_one.cpp in Sources */,
 				3049E3BC17F1016400A99EA7 /* vector_operations.cpp in Sources */,
 				3049E3BD17F1016400A99EA7 /* bernoulli_arrival_process.cpp in Sources */,
 				3049E3BE17F1016400A99EA7 /* generate_line_networks.cpp in Sources */,
