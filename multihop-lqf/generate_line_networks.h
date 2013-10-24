@@ -16,6 +16,6 @@ std::vector<std::vector<bool>> generateMatrixLinear(int, int);
 // Backtracking function used in generateMatrixLinear(int, int);
 std::vector<std::vector<bool>> findMaximalLinear(int, int,
                                                  const std::vector<bool> &);
-    // TODO add memoization
+// TODO(Veggente): Add memoization
 
 #endif  // MULTIHOP_LQF_GENERATE_LINE_NETWORKS_H_
