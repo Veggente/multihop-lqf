@@ -164,3 +164,4 @@ xcuserdata
 # Customized ignored files
 multihop-lqf/multihop_lqf.1
 multihop-lqf.xcodeproj/
+test/
