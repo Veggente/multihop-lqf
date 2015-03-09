@@ -45,7 +45,7 @@ int general_network_simulator(
         // Service and internal arrivals.
         BoolVec attempted_schedule_lqf = lqf(maximal_schedule_matrix,
                                              queues_lqf, rng);
-        BoolVec attempted_schedule_bp = bp(maximal_schedule_matrix,
+        BoolVec attempted_schedule_bp = bp(maximal_schedule_matrix, flow_map,
                                            queues_bp, rng);
         BoolVec actual_schedule_lqf = vector_intersection(
             attempted_schedule_lqf, queues_lqf);
