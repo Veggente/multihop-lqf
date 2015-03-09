@@ -2,10 +2,11 @@
 //  vector_intersection.cpp
 //  multihop-lqf
 //
-//  Copyright (c) 2013 Xiaohan Kang. All rights reserved.
+//  Copyright (c) 2013, 2015 Xiaohan Kang. All rights reserved.
 //
 
 #include "vector_operations.h"  // NOLINT
+#include <cassert>
 
 std::vector<bool> vector_intersection(const std::vector<bool> &v,
                                       const std::vector<int> &q) {
@@ -48,4 +49,21 @@ std::vector<int> vector_change_by_bool(const std::vector<int> &v,
         }
     }
     return return_vector;
+}
+
+BoolVec internal_arrival(const BoolVec &departure, const IntVec &flow_map) {
+    int num_links = static_cast<int>(departure.size());
+    BoolVec return_vec(num_links, false);
+    for (int i = 0; i < num_links; ++i) {
+        int next_link = flow_map[i];
+        // There is an internal arrival if there is a departure and it is not
+        // going into the destination node.
+        if (departure[i] && (next_link != -1) ) {
+            // The next link should not have been set due to the one-hop
+            // interference.
+            assert(!return_vec[next_link]);
+            return_vec[next_link] = true;
+        }
+    }
+    return return_vec;
 }

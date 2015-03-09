@@ -2,7 +2,7 @@
 //  lqf.h
 //  multihop-lqf
 //
-//  Copyright (c) 2013 Xiaohan Kang. All rights reserved.
+//  Copyright (c) 2013, 2015 Xiaohan Kang. All rights reserved.
 //
 
 #ifndef MULTIHOP_LQF_LQF_H_
@@ -14,10 +14,6 @@
 #include <iostream>  // NOLINT
 #include <algorithm>
 #include "./compare_queue.h"
-
-template <typename Type>  // Longest-Queue-First scheduling
-std::vector<bool> lqf(const std::vector<std::vector<bool>> &,
-                      const std::vector<Type> &, std::mt19937 &);
 
 template <typename Type>  // LQF
 std::vector<bool> lqf(const std::vector<std::vector<bool>> &M,
