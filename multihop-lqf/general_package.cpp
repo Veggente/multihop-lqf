@@ -25,12 +25,19 @@ int general_net_package(int argc, char * const argv[]) {
 //    BoolMat maximal_schedule_matrix{m1, m2};
 //    IntVec flow_map{2, -1, -1};
     // A 3-2 tree network.
+//    BoolVec m1{1, 1, 0, 1, 0};
+//    BoolVec m2{1, 0, 0, 0, 1};
+//    BoolVec m3{0, 1, 1, 0, 0};
+//    BoolVec m4{0, 0, 1, 0, 1};
+//    BoolMat maximal_schedule_matrix{m1, m2, m3, m4};
+//    IntVec flow_map{2, 4, 3, -1, -1};
+    // A 4-1 tree network.
     BoolVec m1{1, 1, 0, 1, 0};
     BoolVec m2{1, 0, 0, 0, 1};
     BoolVec m3{0, 1, 1, 0, 0};
     BoolVec m4{0, 0, 1, 0, 1};
     BoolMat maximal_schedule_matrix{m1, m2, m3, m4};
-    IntVec flow_map{2, 4, 3, -1, -1};
+    IntVec flow_map{2, -1, 3, 4, -1};
     // Two flows with adjustable rates.
     int num_links = static_cast<int>(maximal_schedule_matrix[0].size());
     Rates arrival_rates(num_links, 0.0);
