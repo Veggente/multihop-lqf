@@ -10,8 +10,8 @@
 
 #include <vector>
 #include <string>
+#include "common.h"
 
-void output_vector_to_file(const std::vector<int> &v,
-                           const std::string &filename);
+void output_vector_to_file(const Queues &v, const std::string &filename);
 
 #endif  // MULTIHOP_LQF_OUTPUT_VECTOR_TO_FILE_H_

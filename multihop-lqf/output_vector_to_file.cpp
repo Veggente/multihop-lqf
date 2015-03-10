@@ -2,14 +2,14 @@
 //  output_vector_to_file.cpp
 //  multihop-lqf
 //
-//  Copyright (c) 2013 Xiaohan Kang. All rights reserved.
+//  Copyright (c) 2013, 2015 Xiaohan Kang. All rights reserved.
 //
 
 #include "output_vector_to_file.h"  // NOLINT
 #include <fstream>  // NOLINT
 #include <iostream>  // NOLINT
 
-void output_vector_to_file(const std::vector<int> &v,  // NOLINT
+void output_vector_to_file(const Queues &v,  // NOLINT
                            const std::string &filename) {  // NOLINT
     std::ofstream out(filename, std::ofstream::app);
     if (!out) {

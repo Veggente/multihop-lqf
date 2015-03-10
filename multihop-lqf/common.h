@@ -14,7 +14,7 @@
 typedef std::vector<std::vector<bool>> BoolMat;
 typedef std::vector<bool> BoolVec;
 typedef std::vector<double> Rates;
-typedef std::vector<int> Queues;
+typedef std::vector<int64_t> Queues;
 typedef std::vector<std::bernoulli_distribution> BernDistVec;
 typedef std::vector<int> IntVec;
 

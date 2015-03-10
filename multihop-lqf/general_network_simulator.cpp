@@ -16,8 +16,8 @@
 
 int general_network_simulator(
         const BoolMat &maximal_schedule_matrix,
-        int num_iterations,
-        int output_period,
+        int64_t num_iterations,
+        int64_t output_period,
         const Rates &arrival_rate,
         const std::string &filename_lqf,
         const std::string &filename_bp,

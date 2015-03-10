@@ -12,10 +12,8 @@
 #include "general_network_simulator.h"
 
 int general_net_package(int argc, char * const argv[]) {
-    int num_iterations = std::stoi(std::string(argv[1]));
-    int output_period = std::stoi(std::string(argv[2]));
-//    double arrival_rate_to_branch_one = std::stod(std::string(argv[3]));
-//    double arrival_rate_to_branch_two = std::stod(std::string(argv[4]));
+    int64_t num_iterations = std::stol(std::string(argv[1]));
+    int64_t output_period = std::stol(std::string(argv[2]));
     double arrival_ratio = std::stod(std::string(argv[3]));
     std::string filename_lqf(argv[4]);
     std::string filename_bp(argv[5]);

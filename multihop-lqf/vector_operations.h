@@ -12,19 +12,17 @@
 #include "common.h"
 
 std::vector<bool> vector_intersection(const std::vector<bool> &v,
-                                      const std::vector<int> &q);
+                                      const Queues &q);
 
 std::vector<bool> vector_shift_forward(const std::vector<bool> &v);
 
-std::vector<int> vector_sum(const std::vector<int> &v,
-                            const std::vector<bool> &b);
+Queues vector_sum(const Queues &v, const std::vector<bool> &b);
 
-std::vector<int> vector_difference(const std::vector<int> &v,
-                                   const std::vector<bool> &b);
+Queues vector_difference(const Queues &v, const std::vector<bool> &b);
 
-std::vector<int> vector_change_by_bool(const std::vector<int> &v,
-                                       const std::vector<bool> &b,
-                                       bool increase);
+Queues vector_change_by_bool(const Queues &v,
+                             const std::vector<bool> &b,
+                             bool increase);
 
 BoolVec internal_arrival(const BoolVec &departure, const IntVec &flow_map);
 

@@ -13,6 +13,7 @@
 #include "vector_operations.h"  // NOLINT
 #include "bernoulli_arrival_process.h"  // NOLINT
 #include "output_vector_to_file.h"  // NOLINT
+#include "common.h"
 
 int line_network_simulator(int num_links, int interference_distance,
                            int num_iterations, int output_period,
@@ -30,8 +31,8 @@ int line_network_simulator(int num_links, int interference_distance,
     }
 
     // run the iterations
-    std::vector<int> queues_lqf(num_links, 0);  // queues for LQF
-    std::vector<int> queues_bp(num_links, 0);  // queues for back-pressure
+    Queues queues_lqf(num_links, 0);  // queues for LQF
+    Queues queues_bp(num_links, 0);  // queues for back-pressure
     std::mt19937 rng(static_cast<unsigned int>(0));  // random number generator
     std::vector<std::bernoulli_distribution> arrival_generator =
         bernoulli_distribution_vector(arrival_rate);  // Bernoulli distribution
