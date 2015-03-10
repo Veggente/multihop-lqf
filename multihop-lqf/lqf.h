@@ -48,7 +48,7 @@ std::vector<bool> lqf(const std::vector<std::vector<bool>> &M,
             newSurvivor.clear();
             newSurvivor.assign(survivor.begin(), survivor.end());
                 // copy survivor to newSurvivor
-            std::vector<int>::const_iterator it = newSurvivor.begin();
+            std::vector<int>::iterator it = newSurvivor.begin();
             while (it != newSurvivor.end()) {  // find compatible schedules
                 if ( !( (M[*it])[rit->second] ) ) {
                     newSurvivor.erase(it);  // newSurvivor.size() decreases by 1
