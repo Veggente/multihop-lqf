@@ -44,7 +44,7 @@ int general_net_package(int argc, char * const argv[]) {
     Rates arrival_rates(num_links, 0.0);
     arrival_rates[0] = arrival_ratio;
     arrival_rates[1] = arrival_ratio;
-    arrival_rates[2] = arrival_ratio;
+//    arrival_rates[2] = arrival_ratio;
     return general_network_simulator(maximal_schedule_matrix, num_iterations,
                                      output_period, arrival_rates, filename_lqf,
                                      filename_bp, rng, flow_map);
